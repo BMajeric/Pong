@@ -21,12 +21,12 @@ Music = ['africa.mp3', 'all_star.mp3','believer.mp3', 'deja_vu.mp3','havana.mp3'
          'thunder.mp3', 'watt_is_love.mp3','young_blood.mp3']
 
 playing = random.choice(Music)
-music = pygame.mixer.music.load(playing)
+music = pygame.mixer.music.load("./Music/" + playing)
 
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.125)
 
-hit = pygame.mixer.Sound('oof.wav')
+hit = pygame.mixer.Sound('./Music/oof.wav')
 print(pygame.mixer.music.get_volume())
 
 class paddle(object):
